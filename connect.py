@@ -5,7 +5,6 @@ key = ''
 totp = pyotp.TOTP('')
 
 def get_ads() -> dict:
-
     data = requests.get('https://bitpapa.com/api/v1/me/pro', timeout=10, headers={
         'Content-Type': "application/json",
         'X-Access-Token': key
@@ -30,7 +29,6 @@ def search_ads(amount: int, type: str, bank: str, sort) -> dict:
     return data.json()
 
 def update_ads(id: str, price: int) -> dict:
-
     data = requests.put(f'https://bitpapa.com/api/v1/pro/{id}', timeout=10, data="{\n \"equation\": %d\n}" % price, headers={
         'Content-Type': "application/json",
         'X-Access-Token': key

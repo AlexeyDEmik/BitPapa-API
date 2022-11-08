@@ -1,2 +1,2 @@
-# P2P
-p2p crypto repo
+# BitPapa
+Simple lib for connect to API p2p crypto-market "Bitpapa". 

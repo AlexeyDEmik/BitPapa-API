@@ -1,4 +1,3 @@
-import http.client
 import requests
 import pyotp
 
